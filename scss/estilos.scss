@@ -1,0 +1,590 @@
+$titulos: #ff00aa;
+$fondo:#ffccff;
+$widht: 100%;
+$family:Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+
+@mixin box-form{ 
+font-family:$family; 
+text-transform: uppercase;
+font-weight: bold;
+font-size: 1.5rem;
+}
+@mixin box-fieldset{ 
+font-family:$family; 
+text-transform: uppercase;
+}
+
+@mixin titulos{
+color:$titulos;
+text-align: center;
+font-size: 3.4em;
+text-transform: uppercase;
+padding: 40px;
+text-align: center;
+margin: 0 auto;
+font-weight:bold;
+}
+
+/*banner y navegador*/
+
+header {
+background-color:$fondo;
+}
+
+.tales {
+  height: 100px;
+  display:flex;
+  justify-content:center;
+}
+
+body{
+margin: 0 auto;
+position: relative;
+margin: 0 auto;
+background-image: linear-gradient($fondo, #ffe6ff);
+
+}
+
+div {
+ 
+  ul{
+	   
+	li {
+	 
+		a{
+color:#df20df;
+text-transform: capitalize;
+font-size: 24px;
+font-weight: bold;
+border: 3px outset #ff4dff;
+margin: 10px 10px;
+font-family: Sanvito, Corsiva;
+font-style: oblique;
+display: inline-block;
+}
+}
+}
+}
+
+
+div ul li a:hover{
+padding:15px 15px;
+margin: 16px 16px;
+color: #ff4dff;
+border: inset;
+}
+.box-uno{
+background-image: URL("../images/imagenes.jpg");
+width:$widht;
+height: 12rem;
+display: flex;	
+flex-direction:row-reverse;
+justify-content:space-between;
+align-items:center;
+}
+
+.box-uno__wedding{
+color: #e6005c;
+font-size: 2.5em;
+font-family: "Lucida Sans Unicode", cursive;
+font-style: italic;
+text-transform: uppercase;
+text-align: right;
+}	
+
+.box-uno__logo{
+height: 150px;
+padding-left: 40px;
+}	
+
+
+
+/*fotter*/
+
+.box-dos {
+background-image: URL("../images/imagenes.jpg");
+width: $widht;
+height: 15rem;
+}
+
+.box-dos__div{
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: absolute;
+width: $widht;
+right: 0;
+left: 0;
+}
+
+.box-dos__nav a{
+color:#df20df;
+font-style:italic;
+font-weight: bold;
+font-size: 0.9em;
+font-family: 'Amaranth',sans-serif;
+text-transform: uppercase; 
+text-decoration: none;
+border: 3px #df20df;
+padding: 1px;
+margin: 10px 31px;
+border-style: inset;
+background-color: #ffccff;
+display: flex;
+flex-direction: column;
+}
+
+.box-dos__nav a:hover{
+padding:5px;
+}
+
+.box-dos__redes{
+display:flex;
+flex-direction: row-reverse;
+justify-content: right;
+margin: 46px; 
+}
+
+.box-dos__contactanos{
+color:#ff4d94;
+font-family: 'Grandstander', cursive;	
+font-style: italic;
+font-size: 1.3em;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+/*quienes somos*/
+
+.box-datos{ 
+background: #ffe6ff;
+margin: 10px 10px 20px 10px;
+overflow: hidden;
+padding: 20px;
+border-radius: 24px 24px 91px 79px;
+border: 5px solid white;
+}
+
+.box__titulo  {
+@include titulos
+}
+
+.box__textos {
+color: #e60099;
+font-size: 1.2em;
+font-family: "Trebuchet MS";
+font-weight: bold;
+padding: 10px;
+margin: 25px 39px 37px;
+text-align: center;
+}
+
+nav { 
+	ul {
+	list-style: none;
+	font-size: 20px;
+	 li {
+font-size: 20px;
+position: relative;
+margin-bottom: 10px;
+	 li{
+position: absolute;
+display: none;
+padding:13px
+}
+	li {
+display: block;
+width:  20px;
+}
+}
+}
+}
+
+
+.photo-atelier{
+width: 33rem;
+height: 24rem;
+text-align: left;
+display: inline;
+padding: 6px;
+margin: 21px 10px;
+}
+
+.photo__atelier{
+width: 16rem;
+height: 14rem;
+text-align: left;
+display: inline;
+padding: 60px;
+margin: 24px 2px 10px;
+}
+
+
+.box-tabla{ 
+font-size: 1rem;
+border:3px solid #ffb3ff;
+align-items:center;
+}
+
+th {
+color:#ff80ff ;
+font-size: 1.5rem;
+align-items:center;
+padding: 14px;
+text-transform: uppercase;
+}
+
+tr {
+color:#e600e6;
+font-size: 1rem;
+ padding: 14px;
+}
+
+dl, ol, ul {
+margin-top: 8px;
+margin-bottom: 1rem;
+}
+
+
+/*nuestras novia*/
+
+.box__titulosnovia{       
+@include titulos
+}
+
+.box__noviatexto{
+color:#ff66b3;
+font-size: 1.4rem;
+font-weight:bold;
+text-align: center;
+margin: 0 auto;
+padding: 35px;
+}
+		      
+.box__nombrenovias {
+color:#ff4dc4;
+font-family: 'Macondo', cursive;
+font-size: 2em;
+font-weight:bold;
+text-transform: uppercase;
+text-align: center;
+margin: 0 auto;
+padding: 35px;
+}
+
+
+/*weddingplanning*/
+
+.box-planner { 
+font-family: $family; 
+color: rgb(115, 101, 112); 
+font-size: 18px; 
+font-weight: 400; 
+text-align: center; 
+background: rgb(235, 178, 225); 
+margin: 10px 10px 20px; 
+overflow: hidden; 
+padding: 20px; 
+border-radius: 163px 0px 125px 5px;
+border: 3px solid rgb(235, 178, 225);
+}
+
+.box__servicios { 
+list-style:none;
+text-transform:uppercase;
+}
+
+.box-planner__title { 
+font-family: $family;
+color: rgb(115, 101, 112); 
+font-size: 30px; 
+font-weight: 400; 
+text-align: center; 
+text-transform: uppercase;
+margin: 0 auto;
+padding: 28px;
+}
+
+/*vestidos*/
+
+.box-clasicos{ 
+@include titulos
+}
+
+.box-clasicos__titulos { 
+color: #ff1ab3;
+text-align:center;
+font-size: 2em; 
+font-family: garamond; src: url('garamond-italic.ttf'); 
+font-style: italic;
+text-transform: uppercase;
+text-align: center;
+font-weight: 900;
+margin: 0 auto;
+font-weight: 900;
+padding: 40px 10px 10px;
+}
+
+.box-clasicos__descripciones { 
+color: rgb(230, 25, 107);
+text-align:center;
+font-size: 2rem; 
+text-align: center;
+font-weight: bold;
+font-family: garamond; src: url('garamond-italic.ttf'); 
+font-style: italic;
+margin: 0 auto;
+padding: 28px;
+	}
+
+fieldset{ 
+border: 2em dotted #999;
+text-align: center;
+border-style: none;
+padding: 20px;
+			
+	 label{ 
+	@include box-fieldset
+}
+}
+
+select{ 
+@include box-fieldset
+}
+
+input{
+width: 150px; 
+height: 31px;
+transition: all 2s;     
+text-transform: capitalize;  
+}
+
+input:focus{
+width: 220px;
+font-size: 24px;
+}
+
+.box-form{ 
+@include box-form
+}
+
+
+
+@media (min-width: 576px) {
+
+	header a {
+		display: flex;
+		flex-direction: row;
+		font-size: 20px;
+	}
+
+	.box-uno{	
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.box-uno__logo{
+		height: 120px;
+		padding-left: 15px;
+	}
+
+	.box-uno__wedding {
+		font-size: 3.2em;
+		text-align: center;
+		font-weight: bold;
+	}	
+ 	}
+
+
+@media (min-width: 768px) {
+
+	header a {
+		display: flex;
+		flex-direction: column;
+		align-items:center; 
+		font-size: 20px;
+	}
+
+	.box-uno {	
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.box-uno__logo{
+		height: 120px;
+		padding-left: 15px;
+	}
+
+	.box-uno__wedding {
+		font-size: 3.2em;
+		text-align: center;
+		font-weight: bold;
+	}	
+
+	.box-dos__nav a{
+		display: none;
+	}
+
+	.box-dos__redes{
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.box-dos__contactanos{
+		font-size: 3.5em;
+		padding: 5px 5px;
+		margin: 2px 2px;
+	}
+	}
+
+@media (min-width: 992px) {
+	.box-uno {	
+		width: 100%;
+		height: 13rem;
+		display: flex;	
+		flex-direction:row-reverse;
+		justify-content:space-between;
+		align-items:center;
+	}
+
+	
+	.box-uno__wedding {
+		color: #e6005c;
+		font-size: 2.5em;
+		font-family: "Lucida Sans Unicode", cursive;
+		font-style: italic;
+		text-transform: uppercase;
+		text-align: right;
+	}	
+
+	.box-uno__logo{
+		height: 150px;
+		padding-left: 40px;
+	}	
+
+	.box-dos__div{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: absolute;
+		width: 100%;
+		right: 0;
+		left: 0;
+	}
+	
+	.box-dos__nav a{
+		color:#df20df;
+		font-style:italic;
+		font-weight: bold;
+		font-size: 0.9em;
+		font-family: 'Amaranth',sans-serif;
+		text-transform: uppercase; 
+		text-decoration: none;
+		border: 3px #df20df;
+		padding: 1px;
+		margin: 10px 31px;
+		border-style: inset;
+		background-color: #ffccff;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.box-dos__nav a:hover{
+		padding:5px;
+	}
+
+	.box-dos__redes{
+		display:flex;
+		flex-direction: row-reverse;
+		justify-content: right;
+		margin: 46px; 
+	}
+
+	.box-dos__contactanos{
+		color:#ff4d94;
+		font-family: 'Grandstander', cursive;	
+		font-style: italic;
+		font-size: 1.3em;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	}
+
+	@media (min-width: 1200px) {
+
+	.box-uno {	
+		width: 100%;
+		height: 13rem;
+		display: flex;	
+		flex-direction:row-reverse;
+		justify-content:space-between;
+		align-items:center;
+	}
+
+	
+	.box-uno__wedding {
+		color: #e6005c;
+		font-size: 2.5em;
+		font-family: "Lucida Sans Unicode", cursive;
+		font-style: italic;
+		text-transform: uppercase;
+		text-align: right;
+	}	
+
+	.box-uno__logo{
+		height: 150px;
+		padding-left: 40px;
+	}	
+
+	.box-dos__div{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: absolute;
+		width: 100%;
+		right: 0;
+		left: 0;
+	}
+	
+	.box-dos__nav a{
+		color:#df20df;
+		font-style:italic;
+		font-weight: bold;
+		font-size: 0.9em;
+		font-family: 'Amaranth',sans-serif;
+		text-transform: uppercase; 
+		text-decoration: none;
+		border: 3px #df20df;
+		padding: 1px;
+		margin: 10px 31px;
+		border-style: inset;
+		background-color: #ffccff;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.box-dos__nav a:hover{
+		padding:5px;
+	}
+
+	.box-dos__redes{
+		display:flex;
+		flex-direction: row-reverse;
+		justify-content: right;
+		margin: 46px; 
+	}
+
+	.box-dos__contactanos{
+		color:#ff4d94;
+		font-family: 'Grandstander', cursive;	
+		font-style: italic;
+		font-size: 1.3em;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	}
