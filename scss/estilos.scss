@@ -158,11 +158,16 @@ font-weight: bold;
 
 .box-datos{ 
 background: #ffe6ff;
-margin: 10px 10px 20px 10px;
+margin: 23px 10px 20px 10px;
 overflow: hidden;
 padding: 20px;
-border-radius: 24px 24px 91px 79px;
 border: 5px solid white;
+border-radius: 99px 99px 99px 99px;
+-moz-border-radius: 99px 99px 99px 99px;
+-webkit-border-radius: 99px 99px 99px 99px;
+-webkit-box-shadow: 0px 3px 28px 11px rgba(179,100,179,1);
+-moz-box-shadow: 0px 3px 28px 11px rgba(179,100,179,1);
+box-shadow: 0px 3px 28px 11px rgba(179,100,179,1);
 }
 
 .box__titulo  {
@@ -282,11 +287,15 @@ font-size: 18px;
 font-weight: 400; 
 text-align: center; 
 background: rgb(235, 178, 225); 
-margin: 10px 10px 20px; 
+margin: 20px 25px 25px; 
 overflow: hidden; 
 padding: 20px; 
 border-radius: 163px 0px 125px 5px;
 border: 3px solid rgb(235, 178, 225);
+-webkit-box-shadow: 17px 4px 26px 0px rgba(184,103,184,1);
+-moz-box-shadow: 17px 4px 26px 0px rgba(184,103,184,1);
+box-shadow: 17px 4px 26px 0px rgba(184,103,184,1);
+
 }
 
 .box__servicios { 
@@ -576,9 +585,29 @@ font-size: 24px;
 		display:flex;
 		flex-direction: row-reverse;
 		justify-content: right;
-		margin: 46px; 
+		
 	}
+	.fa {
+		padding: 10px;
+		font-size: 30px;
+		width: 70px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+	  } 
+	  .fa-facebook {
+		background: #3B5998;
+		color: white;
+	  }
 
+	  .fa-twitter {
+		background: #55ACEE;
+		color: white;
+	  }
+	.fa-instagram {
+	background: #125688;
+	color: white;
+	}
 	.box-dos__contactanos{
 		color:#ff4d94;
 		font-family: 'Grandstander', cursive;	

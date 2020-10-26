@@ -102,11 +102,16 @@ div ul li a:hover {
 /*quienes somos*/
 .box-datos {
   background: #ffe6ff;
-  margin: 10px 10px 20px 10px;
+  margin: 23px 10px 20px 10px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 24px 24px 91px 79px;
-  border: 5px solid white; }
+  border: 5px solid white;
+  border-radius: 99px 99px 99px 99px;
+  -moz-border-radius: 99px 99px 99px 99px;
+  -webkit-border-radius: 99px 99px 99px 99px;
+  -webkit-box-shadow: 0px 3px 28px 11px #b364b3;
+  -moz-box-shadow: 0px 3px 28px 11px #b364b3;
+  box-shadow: 0px 3px 28px 11px #b364b3; }
 
 .box__titulo {
   color: #ff00aa;
@@ -216,11 +221,14 @@ dl, ol, ul {
   font-weight: 400;
   text-align: center;
   background: #ebb2e1;
-  margin: 10px 10px 20px;
+  margin: 20px 25px 25px;
   overflow: hidden;
   padding: 20px;
   border-radius: 163px 0px 125px 5px;
-  border: 3px solid #ebb2e1; }
+  border: 3px solid #ebb2e1;
+  -webkit-box-shadow: 17px 4px 26px 0px #b867b8;
+  -moz-box-shadow: 17px 4px 26px 0px #b867b8;
+  box-shadow: 17px 4px 26px 0px #b867b8; }
 
 .box__servicios {
   list-style: none;
@@ -451,8 +459,23 @@ input:focus {
   .box-dos__redes {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: right;
-    margin: 46px; }
+    justify-content: right; }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px; }
+  .fa-facebook {
+    background: #3B5998;
+    color: white; }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white; }
+  .fa-instagram {
+    background: #125688;
+    color: white; }
   .box-dos__contactanos {
     color: #ff4d94;
     font-family: 'Grandstander', cursive;
