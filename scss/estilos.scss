@@ -1,8 +1,11 @@
 $titulos: #cc0e74;
 $fondo:#ea86b6;
 $widht: 100%;
-$family:Century Gothic,CenturyGothic, AppleGothic,sans-serif;
-$color:  #e05297;
+$family:Century Gothic,
+CenturyGothic,
+AppleGothic,
+sans-serif;
+$color: #e05297;
 $hover: #790c5a;
 $wedding: #e60099;
 $nosotros: #f0a8cb;
@@ -16,7 +19,7 @@ $chover: #990099;
 
 @mixin box-form {
 	font-family: $family;
-	text-transform:$ttransf;
+	text-transform: $ttransf;
 	font-weight: $bld;
 	font-size: 1.5rem;
 }
@@ -36,18 +39,18 @@ $chover: #990099;
 	text-align: center;
 	margin: 0 auto;
 	font-weight: $bld;
-	
+
 }
 
 @mixin nav {
-	color:  $titulos;
+	color: $titulos;
 	text-transform: $cap;
 	font-size: 24px;
 	font-weight: bold;
 	border: 3px outset $titulos;
 	margin: 10px 10px;
 	padding: 8px;
-	font-family: Sanvito , Corsiva;
+	font-family: Sanvito, Corsiva;
 	background-color: $fondo;
 	font-style: oblique;
 	position: relative;
@@ -126,7 +129,7 @@ div ul li a:hover {
 
 /*fotter*/
 
-.contenedor-footer{
+.contenedor-footer {
 	background-image: URL("../images/imagenes.jpg");
 	width: $widht;
 	height: 100%;
@@ -160,15 +163,15 @@ ol li {
 	display: flex
 }
 
-.redes1{
+.redes1 {
 	@include redes
 }
 
-.redes2{
+.redes2 {
 	@include redes
 }
 
-.redes3{
+.redes3 {
 	@include redes
 }
 
@@ -203,10 +206,11 @@ nav {
 		}
 	}
 }
+
 /*quienes somos*/
 
 .contenedor-nosotros {
-	background:$nosotros;
+	background: $nosotros;
 	margin: 23px 10px 20px 10px;
 	overflow: hidden;
 	padding: 20px;
@@ -219,11 +223,11 @@ nav {
 	box-shadow: 0px 3px 28px 11px $sombra;
 }
 
-.nosotros__titulos{
+.nosotros__titulos {
 	@include titulos
 }
 
-.nosotros__textos{
+.nosotros__textos {
 	color: $texto;
 	font-size: 1.8em;
 	font-family: garamond;
@@ -236,7 +240,7 @@ nav {
 
 /*nuestras novia*/
 
-.novias__titulos{
+.novias__titulos {
 	@include titulos
 }
 
@@ -361,46 +365,51 @@ input:focus {
 
 @media (min-width: 576px) {
 
-	body{
+	body {
 		margin: 0 auto;
 		position: relative;
 		margin: 0 auto;
 		background-image: linear-gradient($fondo, #ffe6ff);
-		}
-		
+	}
+
 	header a {
 		display: flex;
 		flex-direction: row;
 		font-size: 20px;
 	}
 
-	.contenedor-banner{	
+	.contenedor-banner {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	.banner__logo{
-			height: 100px;
-			padding-left: 15px;
-		}
+
+	.banner__logo {
+		height: 100px;
+		padding-left: 15px;
+	}
 
 	.banner__wedding {
 		font-size: 3.2em;
 		text-align: center;
 		font-weight: bold;
-	}	
-	.footer__item1{
+	}
+
+	.footer__item1 {
 		display: none;
 	}
-	.footer__item2{
+
+	.footer__item2 {
 		display: none;
 	}
-	.footer__item3{
+
+	.footer__item3 {
 		display: none;
 	}
-	.footer__redes{
-		display:flex;
-		flex-direction:column;
+
+	.footer__redes {
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
@@ -409,27 +418,33 @@ input:focus {
 		height: 50px;
 		width: 50px;
 		justify-content: center;
-		}
-		ol li{
-		list-style:none;
-	}	
+	}
+
+	ol li {
+		list-style: none;
+	}
+
 	.redes2 {
 		height: 50px;
 		width: 50px;
 		justify-content: center;
-		}
-		ol li{
-		list-style:none;
-	}	
+	}
+
+	ol li {
+		list-style: none;
+	}
+
 	.redes3 {
 		height: 50px;
 		width: 50px;
 		justify-content: center;
-		}
-		ol li{
-		list-style:none;
-	}	
-	.footer__contact{
+	}
+
+	ol li {
+		list-style: none;
+	}
+
+	.footer__contact {
 		font-size: 3.5em;
 		padding: 5px 5px;
 		margin: 2px 2px;
@@ -449,7 +464,7 @@ input:focus {
 		font-weight: 900;
 		padding: 40px 10px 10px;
 	}
-	
+
 	.vestidos__textos {
 		color: #dd3c8a;
 		text-align: center;
@@ -462,324 +477,20 @@ input:focus {
 		margin: 0 auto;
 		padding: 28px;
 	}
-	}
-
-	@media (min-width: 768px) {
-		header {
-			background-color: $fondo;
-		}
-		
-		body {
-			margin: 0 auto;
-			position: relative;
-			margin: 0 auto;
-			background-image: linear-gradient($fondo, #ffe6ff);
-		}
-		
-		div {
-			ul {
-				li {
-					a {
-						color: #cc0e74;
-						text-transform: capitalize;
-						font-size: 24px;
-						font-weight: bold;
-						border: 3px outset #cc0e74;
-						margin: 10px 10px;
-						font-family: Sanvito, Corsiva;
-						font-style: oblique;
-						display: inline-block;
-					}
-				}
-			}
-		}
-		
-		div ul li a:hover {
-			padding: 15px 15px;
-			margin: 16px 16px;
-			color: #790c5a;
-			border: 3px outset #790c5a;
-		}
-		
-		.contenedor-banner {
-			background-image: URL("../images/imagenes.jpg");
-			width: 100%;
-			height: 12rem;
-			display: flex;
-			flex-direction: row-reverse;
-			justify-content: space-between;
-			align-items: center;
-		}
-		
-		.banner__wedding {
-			color: #e60099;
-			font-size: 2.7em;
-			font-family: garamond;
-			font-style: italic;
-			text-transform: uppercase;
-			font-weight: 900;
-			text-align: right;
-			margin: 10px 15px;
-		}
-		
-		.banner__logo {
-			height: 150px;
-			padding-left: 40px;
-		}
-
-.contenedor-footer{
-	background-image: URL("../images/imagenes.jpg");
-	width: 100%;
-	height: 100%;
 }
 
-.footer__contact {
-	color: #ea86b6;
-	font-family: Garamond;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-.footer__item1 {
-	color: #cc0e74;
-	text-transform: capitalize;
-	font-size: 24px;
-	font-weight: bold;
-	border: 3px outset #cc0e74;
-	margin: 10px 10px;
-	padding: 8px;
-	font-family: Sanvito, Corsiva;
-	background-color: #ea86b6;
-	font-style: oblique;
-	position: relative;
-	float: right;
-	display: inherit;
-}
-
-.footer__item2 {
-	color: #cc0e74;
-	text-transform: capitalize;
-	font-size: 24px;
-	font-weight: bold;
-	border: 3px outset #cc0e74;
-	margin: 10px 10px;
-	padding: 8px;
-	font-family: Sanvito, Corsiva;
-	background-color: #ea86b6;
-	font-style: oblique;
-	position: relative;
-	float: right;
-	display: inherit;
-}
-
-.footer__item3 {
-	color: #cc0e74;
-	text-transform: capitalize;
-	font-size: 24px;
-	font-weight: bold;
-	border: 3px outset #cc0e74;
-	margin: 10px 10px;
-	padding: 8px;
-	font-family: Sanvito, Corsiva;
-	background-color: #ea86b6;
-	font-style: oblique;
-	position: relative;
-	float: right;
-	display: inherit;
-}
-
-.vestidos__titulos {
-	color: #e05297;
-	text-align: center;
-	font-size: 2rem;
-	font-family: $family;
-	font-style: italic;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 900;
-	margin: 0 auto;
-	font-weight: 900;
-	padding: 40px 10px 10px;
-}
-
-.vestidos__textos {
-	color: #dd3c8a;
-	text-align: center;
-	font-size: 1.8rem;
-	text-align: center;
-	font-weight: bold;
-	font-family: garamond;
-	src: url('garamond-italic.ttf');
-	font-style: italic;
-	margin: 0 auto;
-	padding: 28px;
-}
-}
-
-
-	@media (min-width: 992px) {
-		header {
-			background-color: $fondo;
-		}
-		
-		body {
-			margin: 0 auto;
-			position: relative;
-			margin: 0 auto;
-			background-image: linear-gradient($fondo, #ffe6ff);
-		}
-		
-		div {
-			ul {
-				li {
-					a {
-						color: #cc0e74;
-						text-transform: capitalize;
-						font-size: 24px;
-						font-weight: bold;
-						border: 3px outset #cc0e74;
-						margin: 10px 10px;
-						font-family: Sanvito, Corsiva;
-						font-style: oblique;
-						display: inline-block;
-					}
-				}
-			}
-		}
-		
-		div ul li a:hover {
-			padding: 15px 15px;
-			margin: 16px 16px;
-			color: #790c5a;
-			border: 3px outset #790c5a;
-		}
-		
-		.contenedor-banner {
-			background-image: URL("../images/imagenes.jpg");
-			width: 100%;
-			height: 12rem;
-			display: flex;
-			flex-direction: row-reverse;
-			justify-content: space-between;
-			align-items: center;
-		}
-		
-		.banner__wedding {
-			color: #e60099;
-			font-size: 2.7em;
-			font-family: garamond;
-			font-style: italic;
-			text-transform: uppercase;
-			font-weight: 900;
-			text-align: right;
-			margin: 10px 15px;
-		}
-		
-		.banner__logo {
-			height: 150px;
-			padding-left: 40px;
-		}
-
-.contenedor-footer{
-	background-image: URL("../images/imagenes.jpg");
-	width: 100%;
-	height: 100%;
-}
-
-.footer__contact {
-	color: #ea86b6;
-	font-family: Garamond;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-.footer__item1 {
-	color: #cc0e74;
-	text-transform: capitalize;
-	font-size: 24px;
-	font-weight: bold;
-	border: 3px outset #cc0e74;
-	margin: 10px 10px;
-	padding: 8px;
-	font-family: Sanvito, Corsiva;
-	background-color: #ea86b6;
-	font-style: oblique;
-	position: relative;
-	float: right;
-	display: inherit;
-}
-
-.footer__item2 {
-	color: #cc0e74;
-	text-transform: capitalize;
-	font-size: 24px;
-	font-weight: bold;
-	border: 3px outset #cc0e74;
-	margin: 10px 10px;
-	padding: 8px;
-	font-family: Sanvito, Corsiva;
-	background-color: #ea86b6;
-	font-style: oblique;
-	position: relative;
-	float: right;
-	display: inherit;
-}
-
-.footer__item3 {
-	color: #cc0e74;
-	text-transform: capitalize;
-	font-size: 24px;
-	font-weight: bold;
-	border: 3px outset #cc0e74;
-	margin: 10px 10px;
-	padding: 8px;
-	font-family: Sanvito, Corsiva;
-	background-color: #ea86b6;
-	font-style: oblique;
-	position: relative;
-	float: right;
-	display: inherit;
-}
-.vestidos__titulos {
-	color: #e05297;
-	text-align: center;
-	font-size: 2.3rem;
-	font-family: $family;
-	font-style: italic;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 900;
-	margin: 0 auto;
-	font-weight: 900;
-	padding: 40px 10px 10px;
-}
-
-.vestidos__textos {
-	color: #dd3c8a;
-	text-align: center;
-	font-size: 2.1rem;
-	text-align: center;
-	font-weight: bold;
-	font-family: garamond;
-	src: url('garamond-italic.ttf');
-	font-style: italic;
-	margin: 0 auto;
-	padding: 28px;
-}
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
 	header {
 		background-color: $fondo;
 	}
-	
+
 	body {
 		margin: 0 auto;
 		position: relative;
 		margin: 0 auto;
 		background-image: linear-gradient($fondo, #ffe6ff);
 	}
-	
+
 	div {
 		ul {
 			li {
@@ -797,14 +508,14 @@ input:focus {
 			}
 		}
 	}
-	
+
 	div ul li a:hover {
 		padding: 15px 15px;
 		margin: 16px 16px;
 		color: #790c5a;
 		border: 3px outset #790c5a;
 	}
-	
+
 	.contenedor-banner {
 		background-image: URL("../images/imagenes.jpg");
 		width: 100%;
@@ -814,7 +525,7 @@ input:focus {
 		justify-content: space-between;
 		align-items: center;
 	}
-	
+
 	.banner__wedding {
 		color: #e60099;
 		font-size: 2.7em;
@@ -825,101 +536,78 @@ input:focus {
 		text-align: right;
 		margin: 10px 15px;
 	}
-	
+
 	.banner__logo {
 		height: 150px;
 		padding-left: 40px;
 	}
 
-.contenedor-footer{
-background-image: URL("../images/imagenes.jpg");
-width: 100%;
-height: 100%;
-}
+	.contenedor-footer {
+		background-image: URL("../images/imagenes.jpg");
+		width: 100%;
+		height: 100%;
+	}
 
-.footer__contact {
-color: #ea86b6;
-font-family: Garamond;
-font-size: 1.5em;
-text-transform: uppercase;
-font-weight: bold;
-text-align:inherit;
-}
-.footer__item1 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
-}
+	.footer__contact {
+		color: #ea86b6;
+		font-family: Garamond;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
 
-.footer__item2 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
-}
+	.footer__item1 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
 
-.footer__item3 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
+	.footer__item2 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
 
-.footer__redes {
-	display: flex;
-	flex-direction: row;
-}
+	.footer__item3 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
 
-.redes1 {
-	height: 30px;
-	width: 30px;
-	margin: 0 2px 5px;
-	
-}
-
-.redes2 {
-	height: 30px;
-	width: 30px;
-	margin: 0 2px 5px;
-	
-}
-
-.redes3 {
-	height: 30px;
-	width: 30px;
-	
-	
 	.vestidos__titulos {
 		color: #e05297;
 		text-align: center;
-		font-size: 2em;
+		font-size: 2rem;
 		font-family: $family;
 		font-style: italic;
 		text-transform: uppercase;
@@ -929,11 +617,370 @@ display: inherit;
 		font-weight: 900;
 		padding: 40px 10px 10px;
 	}
-	
+
 	.vestidos__textos {
 		color: #dd3c8a;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 1.8rem;
+		text-align: center;
+		font-weight: bold;
+		font-family: garamond;
+		src: url('garamond-italic.ttf');
+		font-style: italic;
+		margin: 0 auto;
+		padding: 28px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	header {
+		background-color: $fondo;
+	}
+
+	body {
+		margin: 0 auto;
+		position: relative;
+		margin: 0 auto;
+		background-image: linear-gradient($fondo, #ffe6ff);
+	}
+
+	div {
+		ul {
+			li {
+				a {
+					color: #cc0e74;
+					text-transform: capitalize;
+					font-size: 24px;
+					font-weight: bold;
+					border: 3px outset #cc0e74;
+					margin: 10px 10px;
+					font-family: Sanvito, Corsiva;
+					font-style: oblique;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	div ul li a:hover {
+		padding: 15px 15px;
+		margin: 16px 16px;
+		color: #790c5a;
+		border: 3px outset #790c5a;
+	}
+
+	.contenedor-banner {
+		background-image: URL("../images/imagenes.jpg");
+		width: 100%;
+		height: 12rem;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.banner__wedding {
+		color: #e60099;
+		font-size: 2.7em;
+		font-family: garamond;
+		font-style: italic;
+		text-transform: uppercase;
+		font-weight: 900;
+		text-align: right;
+		margin: 10px 15px;
+	}
+
+	.banner__logo {
+		height: 150px;
+		padding-left: 40px;
+	}
+
+	.contenedor-footer {
+		background-image: URL("../images/imagenes.jpg");
+		width: 100%;
+		height: 100%;
+	}
+
+	.footer__contact {
+		color: #ea86b6;
+		font-family: Garamond;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.footer__item1 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
+
+	.footer__item2 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
+
+	.footer__item3 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
+
+	.vestidos__titulos {
+		color: #e05297;
+		text-align: center;
+		font-size: 2.3rem;
+		font-family: $family;
+		font-style: italic;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 900;
+		margin: 0 auto;
+		font-weight: 900;
+		padding: 40px 10px 10px;
+	}
+
+	.vestidos__textos {
+		color: #dd3c8a;
+		text-align: center;
+		font-size: 2.1rem;
+		text-align: center;
+		font-weight: bold;
+		font-family: garamond;
+		src: url('garamond-italic.ttf');
+		font-style: italic;
+		margin: 0 auto;
+		padding: 28px;
+	}
+}
+
+@media (min-width: 1000px) {
+	header {
+		background-color: $fondo;
+	}
+
+	body {
+		margin: 0 auto;
+		position: relative;
+		margin: 0 auto;
+		background-image: linear-gradient($fondo, #ffe6ff);
+	}
+
+	div {
+		ul {
+			li {
+				a {
+					color: #cc0e74;
+					text-transform: capitalize;
+					font-size: 24px;
+					font-weight: bold;
+					border: 3px outset #cc0e74;
+					margin: 10px 10px;
+					font-family: Sanvito, Corsiva;
+					font-style: oblique;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	div ul li a:hover {
+		padding: 15px 15px;
+		margin: 16px 16px;
+		color: #790c5a;
+		border: 3px outset #790c5a;
+	}
+
+	.contenedor-banner {
+		background-image: URL("../images/imagenes.jpg");
+		width: 100%;
+		height: 12rem;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.banner__wedding {
+		color: #e60099;
+		font-size: 2.7em;
+		font-family: garamond;
+		font-style: italic;
+		text-transform: uppercase;
+		font-weight: 900;
+		text-align: right;
+		margin: 10px 15px;
+	}
+
+	.banner__logo {
+		height: 150px;
+		padding-left: 40px;
+	}
+
+	.contenedor-footer {
+		background-image: URL("../images/imagenes.jpg");
+		width: 100%;
+		height: 100%;
+	}
+
+	.footer__contact {
+		color: #ea86b6;
+		font-family: Garamond;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: inherit;
+	}
+
+	.footer__item1 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
+
+	.footer__item2 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
+
+	.footer__item3 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+
+		.footer__redes {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.redes1 {
+			height: 30px;
+			width: 30px;
+			margin: 0 2px 5px;
+
+		}
+
+		.redes2 {
+			height: 30px;
+			width: 30px;
+			margin: 0 2px 5px;
+
+		}
+
+		.redes3 {
+			height: 30px;
+			width: 30px;
+
+
+			.vestidos__titulos {
+				color: #e05297;
+				text-align: center;
+				font-size: 2em;
+				font-family: $family;
+				font-style: italic;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: 900;
+				margin: 0 auto;
+				font-weight: 900;
+				padding: 40px 10px 10px;
+			}
+
+			.vestidos__textos {
+				color: #dd3c8a;
+				text-align: center;
+				font-size: 2rem;
+				text-align: center;
+				font-weight: bold;
+				font-family: garamond;
+				font-style: italic;
+				margin: 0 auto;
+				padding: 28px;
+			}
+		}
+	}
+
+	.vestidos__titulos {
+		color: #e05297;
+		text-align: center;
+		font-size: 2.3rem;
+		font-family: $family;
+		font-style: italic;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 900;
+		margin: 0 auto;
+		font-weight: 900;
+		padding: 40px 10px 10px;
+	}
+
+	.vestidos__textos {
+		color: #dd3c8a;
+		text-align: center;
+		font-size: 2.1rem;
 		text-align: center;
 		font-weight: bold;
 		font-family: garamond;
@@ -942,46 +989,19 @@ display: inherit;
 		padding: 28px;
 	}
 }
-}
-.vestidos__titulos {
-	color: #e05297;
-	text-align: center;
-	font-size: 2.3rem;
-	font-family: $family;
-	font-style: italic;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 900;
-	margin: 0 auto;
-	font-weight: 900;
-	padding: 40px 10px 10px;
-}
 
-.vestidos__textos {
-	color: #dd3c8a;
-	text-align: center;
-	font-size: 2.1rem;
-	text-align: center;
-	font-weight: bold;
-	font-family: garamond;
-	src: url('garamond-italic.ttf');
-	font-style: italic;
-	margin: 0 auto;
-	padding: 28px;
-}
-}
 @media (min-width: 1200px) {
 	header {
 		background-color: $fondo;
 	}
-	
+
 	body {
 		margin: 0 auto;
 		position: relative;
 		margin: 0 auto;
 		background-image: linear-gradient($fondo, #ffe6ff);
 	}
-	
+
 	div {
 		ul {
 			li {
@@ -999,14 +1019,14 @@ display: inherit;
 			}
 		}
 	}
-	
+
 	div ul li a:hover {
 		padding: 15px 15px;
 		margin: 16px 16px;
 		color: #790c5a;
 		border: 3px outset #790c5a;
 	}
-	
+
 	.contenedor-banner {
 		background-image: URL("../images/imagenes.jpg");
 		width: 100%;
@@ -1016,7 +1036,7 @@ display: inherit;
 		justify-content: space-between;
 		align-items: center;
 	}
-	
+
 	.banner__wedding {
 		color: #e60099;
 		font-size: 2.7em;
@@ -1027,138 +1047,141 @@ display: inherit;
 		text-align: right;
 		margin: 10px 15px;
 	}
-	
+
 	.banner__logo {
 		height: 150px;
 		padding-left: 40px;
 	}
 
-.contenedor-footer{
-background-image: URL("../images/imagenes.jpg");
-width: 100%;
-height: 100%;
+	.contenedor-footer {
+		background-image: URL("../images/imagenes.jpg");
+		width: 100%;
+		height: 100%;
+	}
+
+	.footer__contact {
+		color: #ea86b6;
+		font-family: Garamond;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: inherit;
+	}
+
+	.footer__item1 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
+
+	.footer__item2 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
+
+	.footer__item3 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+
+		.footer__redes {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.redes1 {
+			height: 30px;
+			width: 30px;
+			margin: 0 2px 5px;
+
+		}
+
+		.redes2 {
+			height: 30px;
+			width: 30px;
+			margin: 0 2px 5px;
+
+		}
+
+		.redes3 {
+			height: 30px;
+			width: 30px;
+
+
+		}
+	}
+
+	.vestidos__titulos {
+		color: #e05297;
+		text-align: center;
+		font-size: 2.3rem;
+		font-family: $family;
+		font-style: italic;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 900;
+		margin: 0 auto;
+		font-weight: 900;
+		padding: 40px 10px 10px;
+	}
+
+	.vestidos__textos {
+		color: #dd3c8a;
+		text-align: center;
+		font-size: 2.1rem;
+		text-align: center;
+		font-weight: bold;
+		font-family: garamond;
+		src: url('garamond-italic.ttf');
+		font-style: italic;
+		margin: 0 auto;
+		padding: 28px;
+	}
 }
 
-.footer__contact {
-color: #ea86b6;
-font-family: Garamond;
-font-size: 1.5em;
-text-transform: uppercase;
-font-weight: bold;
-text-align:inherit;
-}
-.footer__item1 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
-}
-
-.footer__item2 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
-}
-
-.footer__item3 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
-
-.footer__redes {
-	display: flex;
-	flex-direction: row;
-}
-
-.redes1 {
-	height: 30px;
-	width: 30px;
-	margin: 0 2px 5px;
-	
-}
-
-.redes2 {
-	height: 30px;
-	width: 30px;
-	margin: 0 2px 5px;
-	
-}
-
-.redes3 {
-	height: 30px;
-	width: 30px;
-	
-	
-}
-}
-.vestidos__titulos {
-	color: #e05297;
-	text-align: center;
-	font-size: 2.3rem;
-	font-family: $family;
-	font-style: italic;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 900;
-	margin: 0 auto;
-	font-weight: 900;
-	padding: 40px 10px 10px;
-}
-
-.vestidos__textos {
-	color: #dd3c8a;
-	text-align: center;
-	font-size: 2.1rem;
-	text-align: center;
-	font-weight: bold;
-	font-family: garamond;
-	src: url('garamond-italic.ttf');
-	font-style: italic;
-	margin: 0 auto;
-	padding: 28px;
-}
-}
 @media (min-width: 3000px) {
 	header {
 		background-color: $fondo;
 	}
-	
+
 	body {
 		margin: 0 auto;
 		position: relative;
 		margin: 0 auto;
 		background-image: linear-gradient($fondo, #ffe6ff);
 	}
-	
+
 	div {
 		ul {
 			li {
@@ -1176,14 +1199,14 @@ display: inherit;
 			}
 		}
 	}
-	
+
 	div ul li a:hover {
 		padding: 15px 15px;
 		margin: 16px 16px;
 		color: #790c5a;
 		border: 3px outset #790c5a;
 	}
-	
+
 	.contenedor-banner {
 		background-image: URL("../images/imagenes.jpg");
 		width: 100%;
@@ -1193,7 +1216,7 @@ display: inherit;
 		justify-content: space-between;
 		align-items: center;
 	}
-	
+
 	.banner__wedding {
 		color: #e60099;
 		font-size: 2.7em;
@@ -1204,148 +1227,151 @@ display: inherit;
 		text-align: right;
 		margin: 10px 15px;
 	}
-	
+
 	.banner__logo {
 		height: 150px;
 		padding-left: 40px;
 	}
 
-.contenedor-footer{
-background-image: URL("../images/imagenes.jpg");
-width: 100%;
-height: 100%;
-}
+	.contenedor-footer {
+		background-image: URL("../images/imagenes.jpg");
+		width: 100%;
+		height: 100%;
+	}
 
-.footer__contact {
-color: #ea86b6;
-font-family: Garamond;
-font-size: 1.5em;
-text-transform: uppercase;
-font-weight: bold;
-text-align:inherit;
-}
-.footer__item1 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
-}
+	.footer__contact {
+		color: #ea86b6;
+		font-family: Garamond;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: inherit;
+	}
 
-.footer__item2 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
-}
+	.footer__item1 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
 
-.footer__item3 {
-color: #cc0e74;
-text-transform: capitalize;
-font-size: 24px;
-font-weight: bold;
-border: 3px outset #cc0e74;
-margin: 10px 10px;
-padding: 8px;
-font-family: Sanvito, Corsiva;
-background-color: #ea86b6;
-font-style: oblique;
-position: relative;
-float: right;
-display: inherit;
+	.footer__item2 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
+	}
 
-.footer__redes {
-	display: flex;
-	flex-direction: row;
-}
+	.footer__item3 {
+		color: #cc0e74;
+		text-transform: capitalize;
+		font-size: 24px;
+		font-weight: bold;
+		border: 3px outset #cc0e74;
+		margin: 10px 10px;
+		padding: 8px;
+		font-family: Sanvito, Corsiva;
+		background-color: #ea86b6;
+		font-style: oblique;
+		position: relative;
+		float: right;
+		display: inherit;
 
-.redes1 {
-	height: 30px;
-	width: 30px;
-	margin: 0 2px 5px;
-	
-}
+		.footer__redes {
+			display: flex;
+			flex-direction: row;
+		}
 
-.redes2 {
-	height: 30px;
-	width: 30px;
-	margin: 0 2px 5px;
-	
-}
+		.redes1 {
+			height: 30px;
+			width: 30px;
+			margin: 0 2px 5px;
 
-.redes3 {
-	height: 30px;
-	width: 30px;
-	
-	
-}
-.vestidos__titulos {
-	color: #e05297;
-	text-align: center;
-	font-size: 2em;
-	font-family: $family;
-	font-style: italic;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 900;
-	margin: 0 auto;
-	font-weight: 900;
-	padding: 40px 10px 10px;
-}
+		}
 
-.vestidos__textos {
-	color: #dd3c8a;
-	text-align: center;
-	font-size: 2rem;
-	text-align: center;
-	font-weight: bold;
-	font-family: garamond;
-	src: url('garamond-italic.ttf');
-	font-style: italic;
-	margin: 0 auto;
-	padding: 28px;
-}
-}
-.vestidos__titulos {
-	color: #e05297;
-	text-align: center;
-	font-size: 2.3rem;
-	font-family: $family;
-	font-style: italic;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 900;
-	margin: 0 auto;
-	font-weight: 900;
-	padding: 40px 10px 10px;
-}
+		.redes2 {
+			height: 30px;
+			width: 30px;
+			margin: 0 2px 5px;
 
-.vestidos__textos {
-	color: #dd3c8a;
-	text-align: center;
-	font-size: 2.1rem;
-	text-align: center;
-	font-weight: bold;
-	font-family: garamond;
-	font-style: italic;
-	margin: 0 auto;
-	padding: 28px;
-}
+		}
+
+		.redes3 {
+			height: 30px;
+			width: 30px;
+
+
+		}
+
+		.vestidos__titulos {
+			color: #e05297;
+			text-align: center;
+			font-size: 2em;
+			font-family: $family;
+			font-style: italic;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 900;
+			margin: 0 auto;
+			font-weight: 900;
+			padding: 40px 10px 10px;
+		}
+
+		.vestidos__textos {
+			color: #dd3c8a;
+			text-align: center;
+			font-size: 2rem;
+			text-align: center;
+			font-weight: bold;
+			font-family: garamond;
+			src: url('garamond-italic.ttf');
+			font-style: italic;
+			margin: 0 auto;
+			padding: 28px;
+		}
+	}
+
+	.vestidos__titulos {
+		color: #e05297;
+		text-align: center;
+		font-size: 2.3rem;
+		font-family: $family;
+		font-style: italic;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 900;
+		margin: 0 auto;
+		font-weight: 900;
+		padding: 40px 10px 10px;
+	}
+
+	.vestidos__textos {
+		color: #dd3c8a;
+		text-align: center;
+		font-size: 2.1rem;
+		text-align: center;
+		font-weight: bold;
+		font-family: garamond;
+		font-style: italic;
+		margin: 0 auto;
+		padding: 28px;
+	}
 }
