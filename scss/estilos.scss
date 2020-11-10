@@ -32,7 +32,7 @@ $chover: #990099;
 @mixin titulos {
 	color: $titulos;
 	text-align: center;
-	font-size: 3.4em;
+	font-size: 3.4rem;
 	font-family: $family;
 	text-transform: $ttransf;
 	padding: 40px;
@@ -42,10 +42,22 @@ $chover: #990099;
 
 }
 
+@mixin vestidos-textos {
+	color: #dd3c8a;
+	text-align: center;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	font-family: garamond;
+	font-style: italic;
+	margin: 0 auto;
+	padding: 28px;
+}
+
 @mixin nav {
 	color: $titulos;
 	text-transform: $cap;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	border: 3px outset $titulos;
 	margin: 10px 10px;
@@ -61,6 +73,53 @@ $chover: #990099;
 	height: 30px;
 	width: 30px;
 	margin: 0 2px 5px;
+}
+
+@mixin footer-item {
+	color: #cc0e74;
+	text-transform: capitalize;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border: 3px outset #cc0e74;
+	margin: 10px 10px;
+	padding: 8px;
+	font-family: Sanvito, Corsiva;
+	background-color: #ea86b6;
+	font-style: oblique;
+	position: relative;
+	float: right;
+	display: inherit;
+}
+
+
+@mixin vestidos-titulos {
+	color: #e05297;
+	text-align: center;
+	font-size: 2rem;
+	font-family: $family;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 900;
+	margin: 0 auto;
+	font-weight: 900;
+	padding: 40px 10px 10px;
+}
+
+@mixin footer-item {
+	color: #cc0e74;
+	text-transform: capitalize;
+	font-size: 24px;
+	font-weight: bold;
+	border: 3px outset #cc0e74;
+	margin: 10px 10px;
+	padding: 8px;
+	font-family: Sanvito, Corsiva;
+	background-color: #ea86b6;
+	font-style: oblique;
+	position: relative;
+	float: right;
+	display: inherit;
 }
 
 /*banner y navegador*/
@@ -82,7 +141,8 @@ div {
 			a {
 				color: $titulos;
 				text-transform: $cap;
-				font-size: 24px;
+				font-size: 1.5rem;
+				;
 				font-weight: $bld;
 				border: 3px outset $titulos;
 				margin: 10px 10px;
@@ -113,7 +173,7 @@ div ul li a:hover {
 
 .banner__wedding {
 	color: $wedding;
-	font-size: 2.7em;
+	font-size: 2.7rem;
 	font-family: garamond;
 	font-style: italic;
 	text-transform: $ttransf;
@@ -138,7 +198,7 @@ div ul li a:hover {
 .footer__contact {
 	color: $fondo;
 	font-family: Garamond;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	text-transform: $ttransf;
 	font-weight: $bld;
 }
@@ -229,7 +289,7 @@ nav {
 
 .nosotros__textos {
 	color: $texto;
-	font-size: 1.8em;
+	font-size: 1.8rem;
 	font-family: garamond;
 	font-weight: $bld;
 	padding: 10px;
@@ -257,7 +317,7 @@ nav {
 .novias__nombres {
 	color: $color;
 	font-family: $family;
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: bold;
 	text-transform: $cap;
 	text-align: center;
@@ -274,7 +334,7 @@ nav {
 .vestidos__titulos {
 	color: $color;
 	text-align: center;
-	font-size: 2em;
+	font-size: 2rem;
 	font-family: $family;
 	font-style: italic;
 	text-transform: $ttransf;
@@ -333,7 +393,7 @@ nav {
 }
 
 fieldset {
-	border: 2em dotted #999;
+	border: 2rem dotted #999;
 	text-align: center;
 	border-style: none;
 	padding: 20px;
@@ -390,7 +450,7 @@ input:focus {
 	}
 
 	.banner__wedding {
-		font-size: 3.2em;
+		font-size: 3.2rem;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -414,15 +474,17 @@ input:focus {
 		align-items: center;
 	}
 
+	ol li {
+		list-style: none;
+	}
+
 	.redes1 {
 		height: 50px;
 		width: 50px;
 		justify-content: center;
 	}
 
-	ol li {
-		list-style: none;
-	}
+
 
 	.redes2 {
 		height: 50px;
@@ -430,9 +492,6 @@ input:focus {
 		justify-content: center;
 	}
 
-	ol li {
-		list-style: none;
-	}
 
 	.redes3 {
 		height: 50px;
@@ -440,9 +499,6 @@ input:focus {
 		justify-content: center;
 	}
 
-	ol li {
-		list-style: none;
-	}
 
 	.footer__contact {
 		font-size: 3.5em;
@@ -452,17 +508,7 @@ input:focus {
 	}
 
 	.vestidos__titulos {
-		color: #e05297;
-		text-align: center;
-		font-size: 2rem;
-		font-family: $family;
-		font-style: italic;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 900;
-		margin: 0 auto;
-		font-weight: 900;
-		padding: 40px 10px 10px;
+		@include vestidos-titulos;
 	}
 
 	.vestidos__textos {
@@ -472,7 +518,6 @@ input:focus {
 		text-align: center;
 		font-weight: bold;
 		font-family: garamond;
-		src: url('garamond-italic.ttf');
 		font-style: italic;
 		margin: 0 auto;
 		padding: 28px;
@@ -497,7 +542,7 @@ input:focus {
 				a {
 					color: #cc0e74;
 					text-transform: capitalize;
-					font-size: 24px;
+					font-size: 1.5rem;
 					font-weight: bold;
 					border: 3px outset #cc0e74;
 					margin: 10px 10px;
@@ -528,7 +573,7 @@ input:focus {
 
 	.banner__wedding {
 		color: #e60099;
-		font-size: 2.7em;
+		font-size: 2.7rem;
 		font-family: garamond;
 		font-style: italic;
 		text-transform: uppercase;
@@ -551,71 +596,25 @@ input:focus {
 	.footer__contact {
 		color: #ea86b6;
 		font-family: Garamond;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		text-transform: uppercase;
 		font-weight: bold;
 	}
 
 	.footer__item1 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
+		@include footer-item;
 	}
 
 	.footer__item2 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
+		@include footer-item;
 	}
 
 	.footer__item3 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
+		@include footer-item;
 	}
 
 	.vestidos__titulos {
-		color: #e05297;
-		text-align: center;
-		font-size: 2rem;
-		font-family: $family;
-		font-style: italic;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 900;
-		margin: 0 auto;
-		font-weight: 900;
-		padding: 40px 10px 10px;
+		@include vestidos-titulos;
 	}
 
 	.vestidos__textos {
@@ -625,7 +624,6 @@ input:focus {
 		text-align: center;
 		font-weight: bold;
 		font-family: garamond;
-		src: url('garamond-italic.ttf');
 		font-style: italic;
 		margin: 0 auto;
 		padding: 28px;
@@ -651,7 +649,7 @@ input:focus {
 				a {
 					color: #cc0e74;
 					text-transform: capitalize;
-					font-size: 24px;
+					font-size: 1.5rem;
 					font-weight: bold;
 					border: 3px outset #cc0e74;
 					margin: 10px 10px;
@@ -682,7 +680,7 @@ input:focus {
 
 	.banner__wedding {
 		color: #e60099;
-		font-size: 2.7em;
+		font-size: 2.7rem;
 		font-family: garamond;
 		font-style: italic;
 		text-transform: uppercase;
@@ -711,78 +709,23 @@ input:focus {
 	}
 
 	.footer__item1 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
+		@include footer-item;
 	}
 
 	.footer__item2 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
+		@include footer-item;
 	}
 
 	.footer__item3 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
+		@include footer-item;
 	}
 
 	.vestidos__titulos {
-		color: #e05297;
-		text-align: center;
-		font-size: 2.3rem;
-		font-family: $family;
-		font-style: italic;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 900;
-		margin: 0 auto;
-		font-weight: 900;
-		padding: 40px 10px 10px;
+		@include vestidos-titulos;
 	}
 
 	.vestidos__textos {
-		color: #dd3c8a;
-		text-align: center;
-		font-size: 2.1rem;
-		text-align: center;
-		font-weight: bold;
-		font-family: garamond;
-		src: url('garamond-italic.ttf');
-		font-style: italic;
-		margin: 0 auto;
-		padding: 28px;
+		@include vestidos-textos;
 	}
 }
 
@@ -804,7 +747,7 @@ input:focus {
 				a {
 					color: #cc0e74;
 					text-transform: capitalize;
-					font-size: 24px;
+					font-size: 1.5rem;
 					font-weight: bold;
 					border: 3px outset #cc0e74;
 					margin: 10px 10px;
@@ -835,7 +778,7 @@ input:focus {
 
 	.banner__wedding {
 		color: #e60099;
-		font-size: 2.7em;
+		font-size: 2.7rem;
 		font-family: garamond;
 		font-style: italic;
 		text-transform: uppercase;
@@ -858,520 +801,284 @@ input:focus {
 	.footer__contact {
 		color: #ea86b6;
 		font-family: Garamond;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		text-transform: uppercase;
 		font-weight: bold;
 		text-align: inherit;
 	}
 
 	.footer__item1 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
+		@include footer-item;
 	}
 
 	.footer__item2 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
-	}
-
-	.footer__item3 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
-
-		.footer__redes {
-			display: flex;
-			flex-direction: row;
-		}
-
-		.redes1 {
-			height: 30px;
-			width: 30px;
-			margin: 0 2px 5px;
-
-		}
-
-		.redes2 {
-			height: 30px;
-			width: 30px;
-			margin: 0 2px 5px;
-
-		}
-
-		.redes3 {
-			height: 30px;
-			width: 30px;
+		@include footer-item;
 
 
-			.vestidos__titulos {
-				color: #e05297;
-				text-align: center;
-				font-size: 2em;
-				font-family: $family;
-				font-style: italic;
-				text-transform: uppercase;
-				text-align: center;
-				font-weight: 900;
-				margin: 0 auto;
-				font-weight: 900;
-				padding: 40px 10px 10px;
+		.footer__item3 {
+			@include footer-item;
+
+
+			.footer__redes {
+				display: flex;
+				flex-direction: row;
 			}
 
-			.vestidos__textos {
-				color: #dd3c8a;
-				text-align: center;
-				font-size: 2rem;
-				text-align: center;
-				font-weight: bold;
+			.redes1 {
+				@include redes;
+			}
+
+			.redes2 {
+				@include redes;
+			}
+
+			.redes3 {
+				@include redes;
+
+
+				.vestidos__titulos {
+					@include vestidos-titulos;
+				}
+
+				.vestidos__textos {
+					@include vestidos-textos;
+				}
+			}
+		}
+
+
+		@media (min-width: 1200px) {
+			header {
+				background-color: $fondo;
+			}
+
+			body {
+				margin: 0 auto;
+				position: relative;
+				margin: 0 auto;
+				background-image: linear-gradient($fondo, #ffe6ff);
+			}
+
+			div {
+				ul {
+					li {
+						a {
+							color: #cc0e74;
+							text-transform: capitalize;
+							font-size: 1.5rem;
+							font-weight: bold;
+							border: 3px outset #cc0e74;
+							margin: 10px 10px;
+							font-family: Sanvito, Corsiva;
+							font-style: oblique;
+							display: inline-block;
+						}
+					}
+				}
+			}
+
+			div ul li a:hover {
+				padding: 15px 15px;
+				margin: 16px 16px;
+				color: #790c5a;
+				border: 3px outset #790c5a;
+			}
+
+			.contenedor-banner {
+				background-image: URL("../images/imagenes.jpg");
+				width: 100%;
+				height: 12rem;
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.banner__wedding {
+				color: #e60099;
+				font-size: 2.7em;
 				font-family: garamond;
 				font-style: italic;
-				margin: 0 auto;
-				padding: 28px;
+				text-transform: uppercase;
+				font-weight: 900;
+				text-align: right;
+				margin: 10px 15px;
 			}
-		}
-	}
 
-	.vestidos__titulos {
-		color: #e05297;
-		text-align: center;
-		font-size: 2.3rem;
-		font-family: $family;
-		font-style: italic;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 900;
-		margin: 0 auto;
-		font-weight: 900;
-		padding: 40px 10px 10px;
-	}
-
-	.vestidos__textos {
-		color: #dd3c8a;
-		text-align: center;
-		font-size: 2.1rem;
-		text-align: center;
-		font-weight: bold;
-		font-family: garamond;
-		font-style: italic;
-		margin: 0 auto;
-		padding: 28px;
-	}
-}
-
-@media (min-width: 1200px) {
-	header {
-		background-color: $fondo;
-	}
-
-	body {
-		margin: 0 auto;
-		position: relative;
-		margin: 0 auto;
-		background-image: linear-gradient($fondo, #ffe6ff);
-	}
-
-	div {
-		ul {
-			li {
-				a {
-					color: #cc0e74;
-					text-transform: capitalize;
-					font-size: 24px;
-					font-weight: bold;
-					border: 3px outset #cc0e74;
-					margin: 10px 10px;
-					font-family: Sanvito, Corsiva;
-					font-style: oblique;
-					display: inline-block;
-				}
+			.banner__logo {
+				height: 150px;
+				padding-left: 40px;
 			}
-		}
-	}
 
-	div ul li a:hover {
-		padding: 15px 15px;
-		margin: 16px 16px;
-		color: #790c5a;
-		border: 3px outset #790c5a;
-	}
-
-	.contenedor-banner {
-		background-image: URL("../images/imagenes.jpg");
-		width: 100%;
-		height: 12rem;
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.banner__wedding {
-		color: #e60099;
-		font-size: 2.7em;
-		font-family: garamond;
-		font-style: italic;
-		text-transform: uppercase;
-		font-weight: 900;
-		text-align: right;
-		margin: 10px 15px;
-	}
-
-	.banner__logo {
-		height: 150px;
-		padding-left: 40px;
-	}
-
-	.contenedor-footer {
-		background-image: URL("../images/imagenes.jpg");
-		width: 100%;
-		height: 100%;
-	}
-
-	.footer__contact {
-		color: #ea86b6;
-		font-family: Garamond;
-		font-size: 1.5em;
-		text-transform: uppercase;
-		font-weight: bold;
-		text-align: inherit;
-	}
-
-	.footer__item1 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
-	}
-
-	.footer__item2 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
-	}
-
-	.footer__item3 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
-
-		.footer__redes {
-			display: flex;
-			flex-direction: row;
-		}
-
-		.redes1 {
-			height: 30px;
-			width: 30px;
-			margin: 0 2px 5px;
-
-		}
-
-		.redes2 {
-			height: 30px;
-			width: 30px;
-			margin: 0 2px 5px;
-
-		}
-
-		.redes3 {
-			height: 30px;
-			width: 30px;
-
-
-		}
-	}
-
-	.vestidos__titulos {
-		color: #e05297;
-		text-align: center;
-		font-size: 2.3rem;
-		font-family: $family;
-		font-style: italic;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 900;
-		margin: 0 auto;
-		font-weight: 900;
-		padding: 40px 10px 10px;
-	}
-
-	.vestidos__textos {
-		color: #dd3c8a;
-		text-align: center;
-		font-size: 2.1rem;
-		text-align: center;
-		font-weight: bold;
-		font-family: garamond;
-		src: url('garamond-italic.ttf');
-		font-style: italic;
-		margin: 0 auto;
-		padding: 28px;
-	}
-}
-
-@media (min-width: 3000px) {
-	header {
-		background-color: $fondo;
-	}
-
-	body {
-		margin: 0 auto;
-		position: relative;
-		margin: 0 auto;
-		background-image: linear-gradient($fondo, #ffe6ff);
-	}
-
-	div {
-		ul {
-			li {
-				a {
-					color: #cc0e74;
-					text-transform: capitalize;
-					font-size: 24px;
-					font-weight: bold;
-					border: 3px outset #cc0e74;
-					margin: 10px 10px;
-					font-family: Sanvito, Corsiva;
-					font-style: oblique;
-					display: inline-block;
-				}
+			.contenedor-footer {
+				background-image: URL("../images/imagenes.jpg");
+				width: 100%;
+				height: 100%;
 			}
-		}
-	}
 
-	div ul li a:hover {
-		padding: 15px 15px;
-		margin: 16px 16px;
-		color: #790c5a;
-		border: 3px outset #790c5a;
-	}
+			.footer__contact {
+				color: #ea86b6;
+				font-family: Garamond;
+				font-size: 1.5em;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-align: inherit;
+			}
 
-	.contenedor-banner {
-		background-image: URL("../images/imagenes.jpg");
-		width: 100%;
-		height: 12rem;
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-		align-items: center;
-	}
+			.footer__item1 {
+				@include footer-item;
+			}
 
-	.banner__wedding {
-		color: #e60099;
-		font-size: 2.7em;
-		font-family: garamond;
-		font-style: italic;
-		text-transform: uppercase;
-		font-weight: 900;
-		text-align: right;
-		margin: 10px 15px;
-	}
+			.footer__item2 {
+				@include footer-item;
+			}
 
-	.banner__logo {
-		height: 150px;
-		padding-left: 40px;
-	}
+			.footer__item3 {
+				@include footer-item;
+			}
 
-	.contenedor-footer {
-		background-image: URL("../images/imagenes.jpg");
-		width: 100%;
-		height: 100%;
-	}
+			.footer__redes {
+				display: flex;
+				flex-direction: row;
+			}
 
-	.footer__contact {
-		color: #ea86b6;
-		font-family: Garamond;
-		font-size: 1.5em;
-		text-transform: uppercase;
-		font-weight: bold;
-		text-align: inherit;
-	}
+			.redes1 {
+				@include redes;
+			}
 
-	.footer__item1 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
-	}
+			.redes2 {
+				@include redes;
 
-	.footer__item2 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
-	}
+			}
 
-	.footer__item3 {
-		color: #cc0e74;
-		text-transform: capitalize;
-		font-size: 24px;
-		font-weight: bold;
-		border: 3px outset #cc0e74;
-		margin: 10px 10px;
-		padding: 8px;
-		font-family: Sanvito, Corsiva;
-		background-color: #ea86b6;
-		font-style: oblique;
-		position: relative;
-		float: right;
-		display: inherit;
-
-		.footer__redes {
-			display: flex;
-			flex-direction: row;
-		}
-
-		.redes1 {
-			height: 30px;
-			width: 30px;
-			margin: 0 2px 5px;
-
-		}
-
-		.redes2 {
-			height: 30px;
-			width: 30px;
-			margin: 0 2px 5px;
-
-		}
-
-		.redes3 {
-			height: 30px;
-			width: 30px;
-
-
+			.redes3 {
+				@include redes;
+			}
 		}
 
 		.vestidos__titulos {
-			color: #e05297;
-			text-align: center;
-			font-size: 2em;
-			font-family: $family;
-			font-style: italic;
-			text-transform: uppercase;
-			text-align: center;
-			font-weight: 900;
-			margin: 0 auto;
-			font-weight: 900;
-			padding: 40px 10px 10px;
+			@include vestidos-titulos;
 		}
 
 		.vestidos__textos {
-			color: #dd3c8a;
-			text-align: center;
-			font-size: 2rem;
-			text-align: center;
-			font-weight: bold;
-			font-family: garamond;
-			src: url('garamond-italic.ttf');
-			font-style: italic;
-			margin: 0 auto;
-			padding: 28px;
+			@include vestidos-textos;
 		}
 	}
 
-	.vestidos__titulos {
-		color: #e05297;
-		text-align: center;
-		font-size: 2.3rem;
-		font-family: $family;
-		font-style: italic;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 900;
-		margin: 0 auto;
-		font-weight: 900;
-		padding: 40px 10px 10px;
-	}
+	@media (min-width: 3000px) {
+		header {
+			background-color: $fondo;
+		}
 
-	.vestidos__textos {
-		color: #dd3c8a;
-		text-align: center;
-		font-size: 2.1rem;
-		text-align: center;
-		font-weight: bold;
-		font-family: garamond;
-		font-style: italic;
-		margin: 0 auto;
-		padding: 28px;
+		body {
+			margin: 0 auto;
+			position: relative;
+			margin: 0 auto;
+			background-image: linear-gradient($fondo, #ffe6ff);
+		}
+
+		div {
+			ul {
+				li {
+					a {
+						color: #cc0e74;
+						text-transform: capitalize;
+						font-size: 1.5rem;
+						font-weight: bold;
+						border: 3px outset #cc0e74;
+						margin: 10px 10px;
+						font-family: Sanvito, Corsiva;
+						font-style: oblique;
+						display: inline-block;
+					}
+				}
+			}
+		}
+
+		div ul li a:hover {
+			padding: 15px 15px;
+			margin: 16px 16px;
+			color: #790c5a;
+			border: 3px outset #790c5a;
+		}
+
+		.contenedor-banner {
+			background-image: URL("../images/imagenes.jpg");
+			width: 100%;
+			height: 12rem;
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.banner__wedding {
+			color: #e60099;
+			font-size: 2.7em;
+			font-family: garamond;
+			font-style: italic;
+			text-transform: uppercase;
+			font-weight: 900;
+			text-align: right;
+			margin: 10px 15px;
+		}
+
+		.banner__logo {
+			height: 150px;
+			padding-left: 40px;
+		}
+
+		.contenedor-footer {
+			background-image: URL("../images/imagenes.jpg");
+			width: 100%;
+			height: 100%;
+		}
+
+		.footer__contact {
+			color: #ea86b6;
+			font-family: Garamond;
+			font-size: 1.5em;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: inherit;
+		}
+
+		.footer__item1 {
+			@include footer-item;
+		}
+
+		.footer__item2 {
+			@include footer-item;
+		}
+
+		.footer__item3 {
+			@include footer-item;
+		}
+
+		.footer__redes {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.redes1 {
+			@include redes;
+		}
+
+		.redes2 {
+			@include redes;
+
+		}
+
+		.redes3 {
+			@include redes;
+		}
+
+		.vestidos__titulos {
+			@include vestidos-titulos;
+		}
+
+		.vestidos__textos {
+			@include vestidos-textos;
+		}
 	}
 }
