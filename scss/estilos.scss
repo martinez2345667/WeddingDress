@@ -43,7 +43,7 @@ $chover: #990099;
 }
 
 @mixin vestidos-textos {
-	color: #dd3c8a;
+	color: $texto;
 	text-align: center;
 	font-size: 2rem;
 	text-align: center;
@@ -76,15 +76,15 @@ $chover: #990099;
 }
 
 @mixin footer-item {
-	color: #cc0e74;
+	color: $titulos;
 	text-transform: capitalize;
 	font-size: 1.5rem;
 	font-weight: bold;
-	border: 3px outset #cc0e74;
+	border: 3px outset $titulos;
 	margin: 10px 10px;
 	padding: 8px;
 	font-family: Sanvito, Corsiva;
-	background-color: #ea86b6;
+	background-color: $fondo;
 	font-style: oblique;
 	position: relative;
 	float: right;
@@ -93,7 +93,7 @@ $chover: #990099;
 
 
 @mixin vestidos-titulos {
-	color: #e05297;
+	color: $color;
 	text-align: center;
 	font-size: 2rem;
 	font-family: $family;
@@ -107,15 +107,15 @@ $chover: #990099;
 }
 
 @mixin footer-item {
-	color: #cc0e74;
+	color: $titulos;
 	text-transform: capitalize;
 	font-size: 24px;
 	font-weight: bold;
-	border: 3px outset #cc0e74;
+	border: 3px outset $titulos;
 	margin: 10px 10px;
 	padding: 8px;
 	font-family: Sanvito, Corsiva;
-	background-color: #ea86b6;
+	background-color: $fondo;
 	font-style: oblique;
 	position: relative;
 	float: right;
@@ -295,7 +295,6 @@ nav {
 	padding: 10px;
 	margin: 25px 39px 37px;
 	text-align: center;
-	text-transform: $cap;
 }
 
 /*nuestras novia*/
